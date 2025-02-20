@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Random Password Generator | Marco Papaleo</title>
+</head>
+
+<body>
+    <div id="main_container">
+        <div class="text">
+            <h1 id="first_text">Generate a</h1>
+            <h1 id="second_text">random password</h1>
+            <p>Never use an insecure password again.</p>
+        </div>
+        </br>
+        <div id="password_length_cont">
+            <label for="passowrd_length">Password length: </label>
+            <input type="text" id="password_length">
+        </div>
+        <div id="button">
+            <button id="generate_button" onclick="generatePassword()">Generate Passwords</button>
+        </div>
+        <hr>
+        <div id="passwords">
+            <h3 id="first_password"></h3>
+            <h3 id="second_password"></h3>
+        </div>
+        <!-- <p id="copy_confirm"></p> -->
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

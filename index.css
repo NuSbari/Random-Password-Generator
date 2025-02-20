@@ -1,0 +1,194 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2b3b52;
+    margin: 0;
+    padding: 20px;
+}
+
+#first_text {
+    color: white;
+    font-weight: 1000;
+    font-family: "Karla";
+    text-align: left;
+    font-size: 2.5em;
+}
+
+#second_text {
+    text-align: left;
+    color: #4ADF86;
+    font-weight: 1000;
+    font-family: "Karla";
+    font-size: 2.5em;
+}
+
+#main_container {
+    text-align: center;
+    width: 440px;
+    height: auto;
+    background-color: #1F2937;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#text {
+    text-align: left;
+}
+
+p {
+    color: white;
+    font-family: "Karla";
+    text-align: left;
+    font-size: 1em;
+}
+
+
+/* Stile base del pulsante */
+
+#generate_button {
+    background-color: #10B981;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    font-family: "Karla", sans-serif;
+    width: 175px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+
+/* Stile al passaggio del mouse */
+
+#generate_button:hover {
+    background-color: #4ADF86;
+    /* Verde più chiaro */
+}
+
+
+/* Stile durante il clic */
+
+#generate_button:active {
+    background-color: #0E9E74;
+    /* Verde più scuro */
+    transform: scale(0.95);
+    /* Effetto di riduzione dimensionale */
+}
+
+#button {
+    text-align: left;
+}
+
+hr {
+    border: none;
+    /* Rimuove lo stile di bordo predefinito */
+    height: 2px;
+    /* Spessore della linea */
+    background-color: #2F3E53;
+    /* Colore della linea */
+    /* Larghezza della linea */
+    margin: 20px auto;
+    /* Spaziatura verticale e centratura orizzontale */
+}
+
+#first_password,
+#second_password {
+    background-color: #273549;
+    width: 211px;
+    height: 39px;
+    border-radius: 5px;
+    display: flex;
+    /* Usa flexbox */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra orizzontalmente */
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#passwords {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: #55F991;
+    font-family: "Karla";
+    text-align: center;
+    font-weight: normal;
+    overflow: hidden;
+    /*could be done better but it works*/
+}
+
+label {
+    color: #55F991;
+    font-family: "Karla";
+    text-align: center;
+    font-weight: normal;
+}
+
+input {
+    background-color: #10141b;
+    border: none;
+    border-radius: 2px;
+    font-family: "Karla";
+    width: 100px;
+    height: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:-webkit-autofill {
+    background-color: #10141b !important;
+    color: white !important;
+    -webkit-box-shadow: 0 0 0 1000px #10141b inset !important;
+    border-radius: 2px;
+    border: none;
+}
+
+#password_length_cont {
+    text-align: left;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    #main_container {
+        max-width: 90%;
+        padding: 30px;
+    }
+    #passwords {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #main_container {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main_container {
+        max-width: 440px;
+    }
+}
